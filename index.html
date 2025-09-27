@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portofolio - Andrew Emmanuel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="main-header" id="mainHeader">
+    <div class="header-left">
+      <div class="logo" aria-hidden="true"></div>
+      <div class="company-name">PT. Bahagia Gak</div>
+    </div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-btn">Home</a></li>
+        <li><a href="#profile" class="nav-btn">Our Profile</a></li>
+        <li><a href="#portfolio" class="nav-btn">Portfolio</a></li>
+        <li><a href="#message-us" class="nav-btn">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="header-spacer"></div>
+
+  <div id="nameModal" class="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card" role="dialog" aria-labelledby="modalTitle">
+      <h2 id="modalTitle">Selamat Datang!</h2>
+      <p>Silahkan masukan nama anda.</p>
+      <input id="modalNameInput" type="text" placeholder="Your name..." />
+      <div class="modal-actions">
+        <button id="modalSubmit" class="btn-primary">Next</button>
+        <button id="modalSkip" class="btn-ghost">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="main-content">
+    <section id="home" class="section section-home">
+      <div class="home-overlay">
+        <h1 class="home-title">Hi <span id="username">Guest</span>, selamat datang di website PT. Bahagia Gak</h1>
+        <p class="home-desc">PT. Bahagia Gak, Bahagia! Damai! Sejahtera!</p>
+      </div>
+    </section>
+
+    <section id="profile" class="section section-profile">
+      <div class="profile-banner" aria-hidden="true"></div>
+      <div class="profile-content">
+        <h2>About PT. Bahagia Gak</h2>
+        <p class="about-text">
+          PT. Bahagia Gak adalah perusahaan yang peduli dengan kebahagian mu, 
+          dengan bertanya kabar mu setiap hari, karena tidak ada yang bertanya pada anda!
+        </p>
+        <div class="vision-mission">
+          <div class="vision">
+            <h3>Vision</h3>
+            <p>Menjadi perusahaan terdepan dalam solusi digital yang membawa kebahagiaan kepada klien.</p>
+          </div>
+          <div class="mission">
+            <h3>Our Headquarter</h3>
+            <ul>
+              <li>Jakarta</li>
+              <li>Bandung</li>
+              <li>Wakanda [Coming Soon]</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section section-portfolio">
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="../Gambar/gambar4.jpeg" alt="Proyek 1" />
+          <p>Membuat Bahagia.</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="../Gambar/gambar5.jpeg" alt="Proyek 2" />
+          <p>Membuat Happy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="message-us" class="section section-gradient">
+      <div class="contact-wrap">
+        <div class="contact-form">
+          <h2>Message Us</h2>
+          <form id="contactForm" novalidate>
+            <label for="name">Name</label>
+            <input id="name" type="text" required />
+            <label for="email">Email</label>
+            <input id="email" type="email" required />
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="tel" required />
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" required></textarea>
+            <div class="form-actions">
+              <button type="submit" class="btn-primary btn-3d">Send</button>
+              <button type="reset" class="btn-ghost">Reset</button>
+            </div>
+          </form>
+        </div>
+        <div id="formOutput" class="contact-output">
+          <p class="muted">Submitted data will appear here after Send.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 PT. Bahagia Gak. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
